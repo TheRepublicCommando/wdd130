@@ -1,6 +1,5 @@
 #content {
-    max-width: 1600px
-    margin: 0  auto;
+    max-width: 1600px; margin: 0  auto;
 }
 nav a {
     text-align:center;
@@ -15,5 +14,26 @@ main section {
     text-align: center;
 }
 #background {
-    height: 725px;
+    height: 725px; background-color: #1f271b;
+}
+body {
+    background-color: #458746;
+}
+header {
+    background-color: #d5520b;
+}
+nav a:hover {
+    background-color: #1acd17;
+}
+.book, .join {
+    background-color: #d5520b;
+}
+.book:hover, .join:hover {
+    background-color: #1acd17;
+}
+.msg {
+    background-color: #458746;
+}
+footer {
+    background-color: #1f271b;
 }
