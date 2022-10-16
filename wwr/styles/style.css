@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@800&family=Roboto:wght@300&display=swap');
+
+
+
 #content {
     max-width: 1600px; margin: 0  auto;
+}
+#logo_link{
+    padding-top: 5px;
 }
 nav a {
     text-align:center;
     background-color:#d5520b;
     text-decoration: none;
+    padding: 20px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    font-family: Roboto Slab;
 }
 .button-box {
     text-align: center;
@@ -20,6 +29,13 @@ main section {
 }
 body {
     background-color: #1f271b;
+    font-family: Roboto, Oswald, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #d5520b;
@@ -29,27 +45,54 @@ nav a:hover {
     color:#296f06;
 }
 .home-title {
-    color:#d5520b
+    color:#d5520b;
+    font-family: Roboto Slab;
+    font-size: 2em;
+    margin-top: 10px;
+    
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid black;
+}
+main section img {
+    box-sizing: border-box;
 }
 h4 {
-    color:#296f06
+    color:#296f06;
+    font-family: Roboto, Oswald, sans-serif;
+    font-size: 1em;
 }
 .book, .join {
     color:#45ae11;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #d5520b;
     color:#1f271b;
+}
+.msg {
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #d5520b;
 }
 .msg p {
     color: #4a9822;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #296f06;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color:#692907;
@@ -59,8 +102,12 @@ footer a:hover {
     background-color: #d5520b;
     color:#1f271b
 }
+footer .social img{
+    padding-top: 15px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -68,6 +115,7 @@ footer a:hover {
 .logo {
     width: 80px;
 }
+
 footer p {
     font-size: 1.2em;
 }
