@@ -15,6 +15,8 @@ nav a {
     background-color:#d5520b;
     text-decoration: none;
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 #hero {
     display: grid;
@@ -80,6 +82,10 @@ nav a:hover {
     font-size: 2em;
     margin-top: 10px;
     
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: 10fr;
 }
 .rivers-card {
     margin: 200px 0;
