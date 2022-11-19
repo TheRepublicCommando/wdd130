@@ -294,6 +294,65 @@ footer p a:hover {
     border-color: #45ae11;
     color: green;
 }
+
+/*cantact us page */
+
+form{
+    margin: 50px auto;
+    width: 400px;
+    padding: 1em;
+    border: 3px solid #d5520b;
+    border-radius: 1em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    color: #d5520b;
+}
+input, textarea{
+    font: 1em Roboto;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus{
+    border-color: #000;
+}
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+.button{
+    padding-left: 90px;
+}
+button{
+    margin-left: 0.5em;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
