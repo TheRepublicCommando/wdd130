@@ -42,9 +42,12 @@ nav a:hover{
 }
 .logo {
     width: 100px;
+    padding: 5px
 }
 .titlebox{
     padding: 5px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 /*Slideshow start*/
 #title {
@@ -55,6 +58,7 @@ nav a:hover{
     padding: 5px;
     width: 350px;
     border-radius: 50%;
+    grid-column: 3;
 }
 #slideshow {
     max-width: 1000px;
@@ -142,9 +146,11 @@ nav a:hover{
 }
 #happyT{
     font-family: Roboto Slab;
+    color: #33281f;
 }
 #happytext{
     text-align: left;
+    color: #33281f;
 }
 #offer{
     margin-top: 30px;
@@ -158,9 +164,11 @@ nav a:hover{
 .offertitle{
     font-family: Roboto Slab;
     text-align: right;
+    color: #33281f;
 }
 .offertext{
     text-align: right;
+    color: #33281f;
 }
 #no-good{
     margin-top: 30px;
@@ -173,9 +181,11 @@ nav a:hover{
 }
 #notitle{
     font-family: Roboto Slab;
+    color: #33281f;
 }
 #notext{
     text-align: left;
+    color: #33281f;
 }
 footer{
     padding: 25px 50px;
