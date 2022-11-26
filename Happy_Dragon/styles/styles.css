@@ -203,5 +203,44 @@ footer a:hover{
     background-color: #b72a4d;
 }
 
-
-
+/*The Menu*/
+#menu_intro{
+    text-align: center;
+}
+.menu-banner{
+    border: 10px solid #b72a4d;   
+}
+.menutitle{
+    text-align: center;
+    background-color: #33281f;
+    padding: 15px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #fee1c7;
+    font-family: Roboto Slab;
+}
+.flavortext{
+    text-align: center;
+    color: #33281f;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+#item-1{
+    grid-column: 2;
+    grid-row: 1/6;
+    margin: 0%;
+    border: 5px solid #33281f;
+}
+.rootbeer-tiem{
+    padding: 10px;
+}
+.item-name{
+    text-align: center;
+}
+.item-name h2{
+    font-family: Roboto Slab;
+}
