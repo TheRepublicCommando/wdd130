@@ -33,7 +33,35 @@
                 <div class="item-name">
                     <h2>Classic RootBeer</h2>
                     <p>$1</p>
+                    <button class="accordion">Section 1</button>
+                    <div class="panel">
                     <p>Made with Real Sugar cane</p>
+                    </div>
+                </div>
+            </section>
+            <section id="item-2">
+                <img class="newrb" src="images/Chahlaqs.png" alt="Chalhqs concoction">
+                <div class="item-name">
+                    <h2>Chahlaqs RootBeer</h2>
+                    <p>$1</p>
+                    <button class="accordion">Section 1</button>
+                    <div class="panel">
+                    <p>Mysterious RootBeer of Chahlaqs own design. Try it if you dare</p>
+                    </div>
+                </div>
+            </section>
+            <section id="item-3">
+                <img class="tea" src="images/tea.png" alt="Some Teas we offer">
+                <div class="item-name">
+                    <h2>Dragon's Tea</h2>
+                    <p>$1</p>
+                    <button class="accordion">Teas we have</button>
+                    <div class="panel">
+                    <p>Jasmine Tea,
+                        Corn Tea,
+                        Sakura Tea,
+                    </p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -54,5 +82,21 @@
             </div>
         </footer>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+        }
+    </script>
 </body>
 </html>
