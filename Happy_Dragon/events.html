@@ -20,13 +20,34 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
-        <div id="title">
-            <h1>The Happy Dragon Events</h1>
+        <div class="titlebox">
+            <div id="title">
+                <h1>The Happy Dragon Events</h1>
+            </div>
         </div>
         <div id="slideshow">
-            <img src="images/banner_placeholder.jpg" alt="slideshow pic #1">
-            <img src="" alt="slideshow pic #2">
-            <img src="" alt="slideshow pic #3">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/Slideshow_1.jpg" style="width:100%">
+                <div class="text">Having fun gathering roots for the RootBeer</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/Slideshow_2.jpg" style="width:100%">
+                <div class="text">Enjoying cupcakes while doing Homework</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/Slideshow_3.jpg" style="width:100%">
+                <div class="text">DM made us a sandwich, we are scared</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
         <main class="events-grid">
             <section id="event-talk">
@@ -39,15 +60,25 @@
                     We will of course have some special events for the Holidays, especially Christmas. Below is a list of events we know is happening. Also some mystery events we want to keep a surprise for now.
                 </p>
             </section>
-            <section id="event-pics">
-                <img class="dnd" src="images/DnD logo.png" alt="D&D">
-                <img class="study" src="images/textbooks.jpg" alt="Study time">
-                <img class="rootbeer" src="images/me.jpg" alt="Rootbeer classes">
-            </section>
-            <section id="known-events">
-                <p>Every friday and saturday is D&D night. Monday-Thursday is study time for after school.To get times
-                    for Kaleb's RootBeer making class, please come and ask him for more info. Below is a calender of the next months events.
-                </p>
+            <section id="event-grid">
+                <div class="event-card1">
+                    <img class="dnd" src="images/DnD_logo.png" alt="D&D">
+                    <p>Every Friday and Saturday night is D&D night. You can call in ahead of time and reserve a table 
+                        for your group and just have a night of fun.
+                    </p>
+                </div>
+                <div class="event-card2">
+                    <img class="study" src="images/textbooks.jpg" alt="Study time">
+                    <p>Monday-Thursday afterschool is study time. You are more than welcome to swing by and hangout. 
+                        If you need any help with your work feel free to ask. We do try to have most of the books that you guys
+                        would need in school
+                    </p>
+                </div>
+                <div class="event-card3">
+                    <img class="rootbeer" src="images/me.jpg" alt="Rootbeer classes">
+                    We do have Rootbeer making classes during the summer so if you want to see how to make
+                    your own Rootbeer and what to stay away from, feel free to ask Kaleb. More info below.
+                </div>
             </section>
         </main>
         <footer>
@@ -67,5 +98,35 @@
             </div>
         </footer>
     </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>

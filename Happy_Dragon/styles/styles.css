@@ -289,6 +289,43 @@ footer a:hover{
     box-shadow: 5px 5px 10px black;
 }
 
+/*Events */
+#event-talk{
+    text-align: center;
+    color: #33281f;
+    background-color: #ff9a5c;
+    border: 2px solid #b72a4d;
+    padding: 1px;
+    margin-top: 1%;
+    box-shadow: 5px 5px 10px black;
+}
+#event-grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.event-card1{
+    grid-row: 1;
+    margin: 2%;
+}
+.event-card2{
+    grid-row: 2;
+    margin: 2%;
+}
+.event-card3{
+    grid-row: 3;
+    margin: 2%;
+}
+.dnd{
+    float: left;
+}
+.study{
+    float: right;
+}
+.me{
+    float: left;
+}
+
 
 /*generic styles, dont change */
 
