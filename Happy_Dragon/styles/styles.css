@@ -307,23 +307,56 @@ footer a:hover{
 .event-card1{
     grid-row: 1;
     margin: 2%;
+    text-align: left;
+    background-color: #ff9a5c;
+    border: 5px solid #c17444;
+    padding: 5px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
 }
 .event-card2{
     grid-row: 2;
     margin: 2%;
+    text-align: right;
+    background-color: #b72a4d;
+    border: 5px solid #822038;
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+    border-radius: 10%;
 }
 .event-card3{
-    grid-row: 3;
+    grid-row: 3/6;
     margin: 2%;
+    text-align: left;
+    padding: 5px;
+    background-color: #33281f;
+    color: #fee1c7;
+    border: 5px solid #fee1c7;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
 }
 .dnd{
     float: left;
+    margin: 10px;
 }
 .study{
     float: right;
+    margin: 10px;
+    border-radius: 10%;
 }
-.me{
+.rootbeer{
     float: left;
+    margin: 10px;
+    border-radius: 30%;
+}
+#event-calander{
+    text-align: center;
+    margin: 20px;
+}
+.calander{
+    width: 100%;
+    height: auto;
+    border: 5px solid #33281f;
 }
 
 
